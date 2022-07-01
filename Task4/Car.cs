@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,20 +24,18 @@ namespace Task4
         {
             this.name = name;
             this.colour = colour;
-            this.price = price;
+this.price = price;
         }
         public static Car Input(int i)
         {
-            Console.Write("Enter car number:\t");
-            int _numberCar = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter model car:\t");
+            Console.Write($"Enter model car {i + 1}:\t");
             string _name = Console.ReadLine();
             Console.Write("Enter colour car:\t");
             string _colour = Console.ReadLine();
             Console.Write("Enter price car:\t");
             double _price = Convert.ToDouble(Console.ReadLine());
             Car car = new Car(_name, _colour, _price);
-            return сar;
+            return car;
         }
         public void Output()
         {
