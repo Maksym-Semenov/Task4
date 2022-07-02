@@ -43,7 +43,7 @@ this.price = price;
         }
         public double ChangePrice(double percent)
         {
-            price = price * percent / 100;
+            price -= price * percent / 100;
             return price;
         }
         public static bool operator ==(Car first, Car second)
