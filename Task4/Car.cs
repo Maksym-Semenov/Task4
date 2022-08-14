@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.ConstrainedExecution;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Task4
 {
@@ -24,7 +19,7 @@ namespace Task4
         {
             this.name = name;
             this.colour = colour;
-this.price = price;
+            this.price = price;
         }
         public static Car Input(int i)
         {
